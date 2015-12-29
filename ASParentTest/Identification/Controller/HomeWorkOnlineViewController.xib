@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeWorkOnlineViewController">
+            <connections>
+                <outlet property="bottomBackView" destination="hN7-Wg-poN" id="UAq-AN-6RP"/>
+                <outlet property="collectionView" destination="qBy-Ob-6Me" id="ppH-El-jHn"/>
+                <outlet property="lastQuestionBtn" destination="iHL-zV-Ngz" id="BvX-ea-9Ta"/>
+                <outlet property="nextQuestionBtn" destination="L4v-r4-ic7" id="Zv5-Rp-DGH"/>
+                <outlet property="tableView" destination="J6k-Nj-grB" id="7Pn-O2-kJB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J6k-Nj-grB">
+                    <rect key="frame" x="0.0" y="76" width="320" height="447"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="B3X-hr-oP7"/>
+                        <outlet property="delegate" destination="-1" id="aDI-8z-Dp9"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qBy-Ob-6Me">
+                    <rect key="frame" x="0.0" y="8" width="320" height="60"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0Qe-Pa-5vj"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="Im1-rc-zbm">
+                        <size key="itemSize" width="40" height="40"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="8" minY="5" maxX="8" maxY="4"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="16m-ow-rdK"/>
+                        <outlet property="delegate" destination="-1" id="nFg-QJ-Y72"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hN7-Wg-poN">
+                    <rect key="frame" x="0.0" y="522" width="320" height="46"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHL-zV-Ngz">
+                            <rect key="frame" x="8" y="8" width="148" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.047531852919999999" green="0.77865445010000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="szE-bm-f41"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="上一题">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="lastQuestionClick:" destination="-1" eventType="touchUpInside" id="3yn-Li-dj1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4v-r4-ic7">
+                            <rect key="frame" x="164" y="8" width="148" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.047531852919999999" green="0.77865445010000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="j6S-X5-6va"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="下一题">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="nextQuestionClick:" destination="-1" eventType="touchUpInside" id="YBO-C9-iq9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.73542922735214233" green="0.9220394492149353" blue="0.93552571535110474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="L4v-r4-ic7" firstAttribute="leading" secondItem="iHL-zV-Ngz" secondAttribute="trailing" constant="8" id="0ce-26-0EZ"/>
+                        <constraint firstAttribute="trailing" secondItem="L4v-r4-ic7" secondAttribute="trailing" constant="8" id="2mE-ue-CeR"/>
+                        <constraint firstItem="L4v-r4-ic7" firstAttribute="top" secondItem="hN7-Wg-poN" secondAttribute="top" constant="8" id="9Ew-Xi-ghb"/>
+                        <constraint firstAttribute="height" constant="46" id="HW9-cV-lxe"/>
+                        <constraint firstItem="L4v-r4-ic7" firstAttribute="width" secondItem="iHL-zV-Ngz" secondAttribute="width" id="V30-et-c3G"/>
+                        <constraint firstItem="iHL-zV-Ngz" firstAttribute="top" secondItem="hN7-Wg-poN" secondAttribute="top" constant="8" id="ypA-W4-d6e"/>
+                        <constraint firstItem="iHL-zV-Ngz" firstAttribute="leading" secondItem="hN7-Wg-poN" secondAttribute="leading" constant="8" id="zf7-qF-CN8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J6k-Nj-grB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7vn-yz-h64"/>
+                <constraint firstItem="J6k-Nj-grB" firstAttribute="top" secondItem="qBy-Ob-6Me" secondAttribute="bottom" constant="8" id="Ctb-Ox-yWH"/>
+                <constraint firstAttribute="trailing" secondItem="J6k-Nj-grB" secondAttribute="trailing" id="I8X-jr-ebt"/>
+                <constraint firstItem="hN7-Wg-poN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IGA-hd-c2h"/>
+                <constraint firstAttribute="trailing" secondItem="hN7-Wg-poN" secondAttribute="trailing" id="IwZ-xe-LCo"/>
+                <constraint firstAttribute="trailing" secondItem="qBy-Ob-6Me" secondAttribute="trailing" id="SZO-bu-QRa"/>
+                <constraint firstItem="hN7-Wg-poN" firstAttribute="top" secondItem="J6k-Nj-grB" secondAttribute="bottom" constant="-1" id="rnz-91-e6z"/>
+                <constraint firstItem="qBy-Ob-6Me" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ujs-Ja-bmI"/>
+                <constraint firstItem="qBy-Ob-6Me" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="wkC-uf-SJV"/>
+                <constraint firstAttribute="bottom" secondItem="hN7-Wg-poN" secondAttribute="bottom" id="wsr-PH-VGR"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="435" y="453"/>
+        </view>
+    </objects>
+</document>

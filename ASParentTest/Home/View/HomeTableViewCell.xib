@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="161" id="KGk-i7-Jjw" customClass="HomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="160.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7t3-uC-vXu">
+                        <rect key="frame" x="0.0" y="8" width="375" height="125.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10c-0f-usg">
+                                <rect key="frame" x="125" y="26" width="121" height="97"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="10c-0f-usg" secondAttribute="width" multiplier="0.8" id="YhD-ck-f6G"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="pic-14"/>
+                                <connections>
+                                    <action selector="showNewsDetailClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xbh-TV-wIY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB8-kK-v3R">
+                                <rect key="frame" x="248" y="26" width="121" height="97.5"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="pic-17"/>
+                                <connections>
+                                    <action selector="showNewsDetailClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UsK-Uj-iGo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabBar_news_off" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-zw-qvK">
+                                <rect key="frame" x="8" y="6" width="15" height="15"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Ksl-kc-DIh"/>
+                                    <constraint firstAttribute="width" constant="37" id="LUe-Gd-pk8"/>
+                                    <constraint firstAttribute="height" constant="15" id="xFh-2F-fK7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LUe-Gd-pk8"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAJ-gs-H9y">
+                                <rect key="frame" x="2" y="26" width="121" height="97.5"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="DkY-Lf-Xnk"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="pic-15"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DkY-Lf-Xnk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showNewsDetailClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4Ov-e6-dpS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRQ-7L-crf">
+                                <rect key="frame" x="31" y="0.0" width="28" height="26"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="5PY-vc-LsL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-CF-ihO">
+                                <rect key="frame" x="295" y="0.0" width="80" height="26"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="nrD-DB-BDm"/>
+                                    <constraint firstAttribute="width" constant="80" id="olX-JB-85y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="更多" image="arrow_gray_right">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNewsViewClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xoz-fx-cX3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lAJ-gs-H9y" firstAttribute="top" secondItem="kGK-zw-qvK" secondAttribute="bottom" constant="5" id="2BA-PO-KuG"/>
+                            <constraint firstItem="10c-0f-usg" firstAttribute="leading" secondItem="lAJ-gs-H9y" secondAttribute="trailing" constant="2" id="5ZH-CI-dM2"/>
+                            <constraint firstItem="vRQ-7L-crf" firstAttribute="top" secondItem="7t3-uC-vXu" secondAttribute="top" id="5vT-Au-jwQ"/>
+                            <constraint firstAttribute="bottom" secondItem="lAJ-gs-H9y" secondAttribute="bottom" constant="2" id="6mm-iI-qiH"/>
+                            <constraint firstItem="10c-0f-usg" firstAttribute="width" secondItem="jB8-kK-v3R" secondAttribute="width" id="BaZ-NU-tMU"/>
+                            <constraint firstItem="jB8-kK-v3R" firstAttribute="top" secondItem="10c-0f-usg" secondAttribute="top" id="CIn-lm-g3M"/>
+                            <constraint firstItem="10c-0f-usg" firstAttribute="top" secondItem="lAJ-gs-H9y" secondAttribute="top" id="H8o-VM-sgH"/>
+                            <constraint firstItem="jB8-kK-v3R" firstAttribute="leading" secondItem="10c-0f-usg" secondAttribute="trailing" constant="2" id="JSH-51-V6C"/>
+                            <constraint firstItem="fbT-CF-ihO" firstAttribute="top" secondItem="7t3-uC-vXu" secondAttribute="top" id="Jr8-f9-rKV"/>
+                            <constraint firstAttribute="trailing" secondItem="fbT-CF-ihO" secondAttribute="trailing" id="KhI-Ex-yn1"/>
+                            <constraint firstAttribute="trailing" secondItem="jB8-kK-v3R" secondAttribute="trailing" constant="2" id="Qc5-Qb-M9D"/>
+                            <constraint firstItem="lAJ-gs-H9y" firstAttribute="leading" secondItem="7t3-uC-vXu" secondAttribute="leading" constant="2" id="R5Y-5T-WQK"/>
+                            <constraint firstItem="kGK-zw-qvK" firstAttribute="leading" secondItem="7t3-uC-vXu" secondAttribute="leading" constant="8" id="aXg-Ma-4cr"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lAJ-gs-H9y" secondAttribute="bottom" constant="2" id="lkC-tp-kKd"/>
+                            <constraint firstItem="lAJ-gs-H9y" firstAttribute="width" secondItem="10c-0f-usg" secondAttribute="width" id="lmn-qU-zPV"/>
+                            <constraint firstItem="vRQ-7L-crf" firstAttribute="leading" secondItem="kGK-zw-qvK" secondAttribute="trailing" constant="8" id="mKo-Ia-iRC"/>
+                            <constraint firstItem="kGK-zw-qvK" firstAttribute="top" secondItem="7t3-uC-vXu" secondAttribute="top" constant="6" id="on1-mZ-RYG"/>
+                            <constraint firstItem="10c-0f-usg" firstAttribute="height" secondItem="lAJ-gs-H9y" secondAttribute="height" id="vMx-qD-rFJ"/>
+                            <constraint firstItem="jB8-kK-v3R" firstAttribute="height" secondItem="10c-0f-usg" secondAttribute="height" id="yKA-Z7-pKa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lkC-tp-kKd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="7t3-uC-vXu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Bzf-MF-OnE"/>
+                    <constraint firstItem="7t3-uC-vXu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="P71-62-Xkk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7t3-uC-vXu" secondAttribute="bottom" constant="-8" id="qSd-eq-82F"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7t3-uC-vXu" secondAttribute="trailing" constant="-8" id="tHH-mc-kax"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <constraints>
+                <constraint firstItem="lAJ-gs-H9y" firstAttribute="height" relation="lessThanOrEqual" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.3" id="1gP-GK-Ve8"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1gP-GK-Ve8"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="478.5" y="298.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_gray_right" width="9" height="16"/>
+        <image name="pic-14" width="108" height="97"/>
+        <image name="pic-15" width="108" height="97"/>
+        <image name="pic-17" width="108" height="97"/>
+        <image name="tabBar_news_off" width="21" height="21"/>
+    </resources>
+</document>
