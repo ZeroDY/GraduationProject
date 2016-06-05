@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SubCommentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-pA-wRb">
+                        <rect key="frame" x="63" y="8" width="249" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Wkd-ak-sQ8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23q-Bn-UMw">
+                        <rect key="frame" x="173" y="10" width="137" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Ef6-5V-bSV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCQ-LL-n6t">
+                        <rect key="frame" x="64" y="5" width="240" height="113"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HCQ-LL-n6t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="56" id="6cZ-K1-BE2"/>
+                    <constraint firstItem="HCQ-LL-n6t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="6rm-5o-IrA"/>
+                    <constraint firstItem="23q-Bn-UMw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="Flb-rR-Yfc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HCQ-LL-n6t" secondAttribute="trailing" constant="8" id="IL3-VP-zyt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HCQ-LL-n6t" secondAttribute="bottom" constant="-7" id="TdN-UE-Da9"/>
+                    <constraint firstItem="Qrc-pA-wRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dn7-iN-7M6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="23q-Bn-UMw" secondAttribute="trailing" constant="2" id="nDs-11-pV6"/>
+                    <constraint firstItem="Qrc-pA-wRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="55" id="uk8-Ha-yD0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="comLab" destination="HCQ-LL-n6t" id="cKi-6e-Jnq"/>
+                <outlet property="dateLab" destination="23q-Bn-UMw" id="trf-cB-uog"/>
+                <outlet property="nameLab" destination="23q-Bn-UMw" id="Yw2-8K-e3G"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="351"/>
+        </tableViewCell>
+    </objects>
+</document>

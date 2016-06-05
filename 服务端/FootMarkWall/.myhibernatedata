@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Tue Jun 09 15:30:00 CST 2015
+genBasicCompId=false
+sessionFactoryName=com.footmark.tools.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=assigned
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/FootMarkWall/hibernate.reveng.xml
+configFile=/FootMarkWall/src/hibernate.cfg.xml
+createConfigFile=true

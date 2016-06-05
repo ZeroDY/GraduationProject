@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentViewController">
+            <connections>
+                <outlet property="tableView" destination="kN2-SZ-thI" id="0nh-tI-DqX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kN2-SZ-thI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="533"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="37B-tK-b9d"/>
+                        <outlet property="delegate" destination="-1" id="0aA-SP-GyL"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i9-up-IQt">
+                    <rect key="frame" x="0.0" y="533" width="320" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="eVJ-sa-rYf"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="wys_a.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="comment:" destination="-1" eventType="touchUpInside" id="hqz-JT-UzL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kN2-SZ-thI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1zK-DW-fub"/>
+                <constraint firstItem="1i9-up-IQt" firstAttribute="top" secondItem="kN2-SZ-thI" secondAttribute="bottom" id="2wd-ii-PQA"/>
+                <constraint firstAttribute="trailing" secondItem="kN2-SZ-thI" secondAttribute="trailing" id="6YU-yW-e84"/>
+                <constraint firstAttribute="trailing" secondItem="1i9-up-IQt" secondAttribute="trailing" id="BeT-pG-KHH"/>
+                <constraint firstItem="kN2-SZ-thI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HOg-2Y-bRy"/>
+                <constraint firstAttribute="bottom" secondItem="1i9-up-IQt" secondAttribute="bottom" id="SUb-gR-Ytt"/>
+                <constraint firstItem="1i9-up-IQt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tG6-KS-arW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="80" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wys_a.png" width="640" height="49"/>
+    </resources>
+</document>
